@@ -7,235 +7,189 @@
       name="description"
       content="Portfolio de Khalilou Yacouba Tandia — développeur web & data/IA. Projets machine learning, API, cloud AWS, compétences et contact."
     />
-    <title>Khalilou Tandia — Portfolio</title>
+    <title>Khalilou Tandia — Dossier professionnel</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#0b1020" />
+    <meta name="theme-color" content="#F1EEE4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
     <script defer src="assets/main.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" data-progress aria-hidden="true"></div>
 
-    <div class="bg" aria-hidden="true">
-      <div class="bg__gradient"></div>
-      <div class="bg__noise"></div>
-    </div>
-
-    <header class="header" data-elevate>
-      <div class="container header__inner">
-        <a class="brand" href="#top" aria-label="Accueil">
-          <img class="brand__mark brand__photo" src="assets/img/khalilou-portrait.png" alt="" />
-          <span class="brand__text">Khalilou Tandia</span>
+    <header class="masthead-bar">
+      <div class="container masthead-bar__inner">
+        <a class="masthead-bar__id" href="#top">
+          <b>Khalilou Tandia</b><span class="dot hide-mobile">·</span><span class="hide-mobile">dossier 2026</span>
         </a>
 
         <nav class="nav" aria-label="Navigation principale">
-          <a class="nav__link" href="#apropos">À propos</a>
-          <a class="nav__link" href="#competences">Compétences</a>
-          <a class="nav__link" href="#experience">Expérience</a>
-          <a class="nav__link" href="#projets">Projets</a>
-          <a class="nav__link" href="#formation">Formation</a>
-          <a class="nav__link" href="#contact">Contact</a>
+          <a class="nav__link" href="#apropos">01 Profil</a>
+          <a class="nav__link" href="#competences">02 Compétences</a>
+          <a class="nav__link" href="#experience">03 Expérience</a>
+          <a class="nav__link" href="#projets">04 Projets</a>
+          <a class="nav__link" href="#formation">05 Formation</a>
+          <a class="nav__link" href="#contact">06 Contact</a>
         </nav>
 
-        <div class="header__actions">
-          <a class="btn btn--ghost" href="assets/CV_Khalilou_Tandia.pdf" download>
-            Télécharger CV
-          </a>
-          <button class="btn btn--ghost" type="button" data-theme-toggle aria-label="Changer de thème">
+        <div class="bar__actions">
+          <a class="btn" href="assets/CV_Khalilou_Tandia.pdf" download>CV ↓</a>
+          <button class="btn btn--icon" type="button" data-theme-toggle aria-label="Changer de thème">
             <span class="icon" aria-hidden="true" data-icon="moon"></span>
-            <span class="btn__label">Thème</span>
           </button>
-          <button class="btn btn--ghost header__burger" type="button" data-menu-toggle aria-label="Ouvrir le menu">
-            <span class="burger" aria-hidden="true"></span>
-          </button>
+          <button class="btn btn--icon burger" type="button" data-menu-toggle aria-label="Ouvrir le menu">☰</button>
         </div>
       </div>
 
       <div class="mobile" data-mobile-menu hidden>
         <div class="container mobile__inner">
-          <a class="mobile__link" href="#apropos">À propos</a>
-          <a class="mobile__link" href="#competences">Compétences</a>
-          <a class="mobile__link" href="#experience">Expérience</a>
-          <a class="mobile__link" href="#projets">Projets</a>
-          <a class="mobile__link" href="#formation">Formation</a>
-          <a class="mobile__link" href="#contact">Contact</a>
-          <div class="mobile__cta">
-            <a class="btn btn--primary" href="assets/CV_Khalilou_Tandia.pdf" download>Télécharger CV</a>
-          </div>
+          <a class="mobile__link" href="#apropos">01 — Profil</a>
+          <a class="mobile__link" href="#competences">02 — Compétences</a>
+          <a class="mobile__link" href="#experience">03 — Expérience</a>
+          <a class="mobile__link" href="#projets">04 — Projets</a>
+          <a class="mobile__link" href="#formation">05 — Formation</a>
+          <a class="mobile__link" href="#contact">06 — Contact</a>
         </div>
       </div>
     </header>
 
     <main id="contenu">
-      <section id="top" class="hero">
-        <div class="container hero__inner">
-          <div class="hero__copy">
-            <p class="badge reveal">Créateur de solutions numériques</p>
-            <h1 class="hero__title reveal">
-              Khalilou <span class="text-gradient">Yacouba Tandia</span>
-            </h1>
-            <p class="hero__subtitle reveal">
-              Développeur web orienté résultats, avec une spécialisation croissante en <strong>Data Science</strong>
-              &amp; <strong>Intelligence Artificielle</strong>. Du site web à l'API, en passant par le pipeline
-              cloud ou le modèle de machine learning mis en production : j'aime livrer des solutions complètes,
-              propres, testées, et faciles à utiliser.
-            </p>
+      <section id="top" class="masthead">
+        <div class="container">
+          <p class="masthead__kicker reveal">Dossier professionnel — mis à jour septembre 2026</p>
 
-            <div class="hero__meta reveal">
-              <div class="meta">
-                <span class="icon" aria-hidden="true" data-icon="pin"></span>
-                <span>Dakar, Sénégal</span>
+          <div class="masthead__grid">
+            <div>
+              <h1 class="masthead__name reveal">Khalilou Yacouba Tandia</h1>
+              <p class="masthead__role reveal">Développeur web — en spécialisation Data Science &amp; IA</p>
+              <p class="masthead__lede reveal">
+                Du site web à l'API, du pipeline cloud au modèle de machine learning mis en production :
+                <strong>j'aime construire des solutions complètes</strong>, testées et documentées, plutôt que des
+                prototypes qui s'arrêtent au notebook.
+              </p>
+
+              <div class="meta-row reveal">
+                <span class="meta"><span class="meta__k">loc.</span> Dakar, Sénégal</span>
+                <span class="meta"><span class="meta__k">form.</span> Master 1 Data Science &amp; IA — 2025–2026</span>
+                <span class="meta"><span class="meta__k">permis</span> B</span>
+                <span class="meta"><span class="meta__k">dispo.</span> ouvert aux missions</span>
               </div>
-              <div class="meta">
-                <span class="icon" aria-hidden="true" data-icon="cap"></span>
-                <span>Master 1 Data Science &amp; IA (2025–2026)</span>
+
+              <div class="masthead__cta reveal">
+                <a class="btn btn--accent" href="#contact">Me contacter</a>
+                <a class="btn" href="#projets">Voir les projets →</a>
               </div>
-              <div class="meta">
-                <span class="icon" aria-hidden="true" data-icon="car"></span>
-                <span>Permis B</span>
+
+              <div class="masthead__social reveal">
+                <a class="textlink" href="mailto:Khalilouybt@gmail.com">
+                  <span class="icon" aria-hidden="true" data-icon="mail"></span> Khalilouybt@gmail.com
+                </a>
+                <a class="textlink" href="tel:+221773941018">
+                  <span class="icon" aria-hidden="true" data-icon="phone"></span> +221 77 394 10 18
+                </a>
+                <a class="textlink" href="https://www.linkedin.com/in/khaliloutandia" target="_blank" rel="noreferrer">
+                  <span class="icon" aria-hidden="true" data-icon="linkedin"></span> LinkedIn
+                </a>
+                <a class="textlink" href="https://github.com/khalilout" target="_blank" rel="noreferrer">
+                  <span class="icon" aria-hidden="true" data-icon="github"></span> GitHub
+                </a>
               </div>
             </div>
 
-            <div class="hero__cta reveal">
-              <a class="btn btn--primary" href="#contact">Me contacter</a>
-              <a class="btn btn--ghost" href="#projets">Voir les projets</a>
-            </div>
-
-            <div class="hero__social reveal" aria-label="Liens">
-              <a class="chip" href="mailto:Khalilouybt@gmail.com">
-                <span class="icon" aria-hidden="true" data-icon="mail"></span>
-                <span>Email</span>
-              </a>
-              <a class="chip" href="tel:+221773941018">
-                <span class="icon" aria-hidden="true" data-icon="phone"></span>
-                <span>Appeler</span>
-              </a>
-              <a class="chip" href="https://www.linkedin.com/in/khaliloutandia" target="_blank" rel="noreferrer">
-                <span class="icon" aria-hidden="true" data-icon="linkedin"></span>
-                <span>LinkedIn</span>
-              </a>
-              <a class="chip" href="https://github.com/khalilout" target="_blank" rel="noreferrer">
-                <span class="icon" aria-hidden="true" data-icon="github"></span>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="hero__card reveal">
-            <div class="card card--glass">
-              <div class="profile-photo">
+            <figure class="figure reveal" data-parallax>
+              <div class="figure__frame">
                 <img
                   src="assets/img/khalilou-portrait.png"
-                  alt="Portrait professionnel de Khalilou Yacouba Tandia"
+                  alt="Portrait de Khalilou Yacouba Tandia"
                   loading="eager"
                   fetchpriority="high"
                 />
               </div>
-              <div class="card__top">
-                <div class="card__who">
-                  <p class="card__name">Khalilou Tandia</p>
-                  <p class="card__role">Web • Data &amp; IA • Cloud</p>
-                </div>
-              </div>
+              <figcaption class="figure__caption">
+                <em>Khalilou Yacouba Tandia</em><br />
+                Fig. 1 — Dakar, 2026
+              </figcaption>
+            </figure>
+          </div>
 
-              <div class="card__grid" role="list">
-                <div class="stat" role="listitem">
-                  <p class="stat__k">Full‑stack</p>
-                  <p class="stat__v">Laravel • FastAPI</p>
-                </div>
-                <div class="stat" role="listitem">
-                  <p class="stat__k">Front‑end</p>
-                  <p class="stat__v">React • Streamlit</p>
-                </div>
-                <div class="stat" role="listitem">
-                  <p class="stat__k">Data &amp; ML</p>
-                  <p class="stat__v">Scikit‑learn • XGBoost</p>
-                </div>
-                <div class="stat" role="listitem">
-                  <p class="stat__k">Cloud</p>
-                  <p class="stat__v">AWS Lambda • S3 • DynamoDB</p>
-                </div>
-              </div>
-
-              <div class="card__bar" aria-hidden="true">
-                <span class="spark"></span>
-              </div>
-
-              <p class="card__note">
-                Ouvert aux opportunités : développement web, projets data &amp; IA, automatisation cloud.
-              </p>
-            </div>
+          <div class="meta-row reveal" style="border-top: none; margin-top: 8px;">
+            <span class="meta"><span class="meta__k">#</span> <b data-count="8">0</b> projets documentés</span>
+            <span class="meta"><span class="meta__k">#</span> <b data-count="3">0</b> stages effectués</span>
+            <span class="meta"><span class="meta__k">#</span> <b data-count="79">0</b> tests automatisés écrits</span>
+            <span class="meta"><span class="meta__k">#</span> <b data-count="1">0</b> certification cloud (AWS)</span>
           </div>
         </div>
       </section>
 
       <section id="apropos" class="section">
         <div class="container">
-          <div class="section__head">
-            <h2 class="section__title reveal">À propos</h2>
-            <p class="section__subtitle reveal">
-              Je combine développement et analyse de données pour livrer des produits concrets, fiables, et impactants.
-            </p>
-          </div>
-
-          <div class="grid grid--2">
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Profil</h3>
-              <p class="muted">
-                Développeur web passionné, spécialisé dans la conception d'applications performantes et innovantes.
-                Actuellement en Master 1 Data Science &amp; Intelligence Artificielle, je construis en parallèle un
-                portfolio de projets concrets — nettoyage de données automatisé, détection de fraude bancaire,
-                prédiction de churn, clustering non supervisé, API sécurisées et pipelines cloud — pour aller du
-                prototype jusqu'à la mise en production, avec tests, conteneurisation et documentation à chaque
-                fois.
-              </p>
-              <div class="pill-row" aria-label="Points forts">
-                <span class="pill">Esprit d'analyse</span>
-                <span class="pill">Apprentissage rapide</span>
-                <span class="pill">Résolution de problèmes</span>
-                <span class="pill">Créativité</span>
-                <span class="pill">Rigueur méthodologique</span>
-              </div>
+          <div class="section__grid">
+            <div class="section__rail reveal">
+              <span class="section__num">01</span>
+              <span class="section__label">Profil</span>
             </div>
-
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Coordonnées</h3>
-              <div class="contact-list">
-                <a class="contact" href="mailto:Khalilouybt@gmail.com">
-                  <span class="icon" aria-hidden="true" data-icon="mail"></span>
-                  <span class="contact__text">Khalilouybt@gmail.com</span>
-                </a>
-                <a class="contact" href="tel:+221773941018">
-                  <span class="icon" aria-hidden="true" data-icon="phone"></span>
-                  <span class="contact__text">+221 77 394 10 18</span>
-                </a>
-                <a
-                  class="contact"
-                  href="https://www.linkedin.com/in/khaliloutandia"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span class="icon" aria-hidden="true" data-icon="linkedin"></span>
-                  <span class="contact__text">linkedin.com/in/khaliloutandia</span>
-                </a>
-                <a class="contact" href="https://github.com/khalilout" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span class="contact__text">github.com/khalilout</span>
-                </a>
-                <div class="contact" role="listitem">
-                  <span class="icon" aria-hidden="true" data-icon="flag"></span>
-                  <span class="contact__text">Mauritanien</span>
-                </div>
-                <div class="contact" role="listitem">
-                  <span class="icon" aria-hidden="true" data-icon="lang"></span>
-                  <span class="contact__text">Français (DELF B2) • Arabe (intermédiaire) • Anglais (débutant)</span>
+            <div class="section__body" data-stagger="90">
+              <div class="leaf reveal">
+                <h3 class="leaf__title">Qui je suis</h3>
+                <p>
+                  Développeur web passionné, spécialisé dans la conception d'applications performantes et
+                  innovantes. Actuellement en Master 1 Data Science &amp; Intelligence Artificielle, je construis en
+                  parallèle un portfolio de projets concrets — nettoyage de données automatisé, détection de fraude
+                  bancaire, prédiction de churn, clustering non supervisé, API sécurisées et pipelines cloud — pour
+                  aller <strong>du prototype jusqu'à la mise en production</strong>, avec tests, conteneurisation et
+                  documentation à chaque fois.
+                </p>
+                <div class="trait-row">
+                  <span class="trait">Esprit d'analyse</span>
+                  <span class="trait">Apprentissage rapide</span>
+                  <span class="trait">Résolution de problèmes</span>
+                  <span class="trait">Créativité</span>
+                  <span class="trait">Rigueur méthodologique</span>
                 </div>
               </div>
-              <div class="hr"></div>
-              <p class="muted small">
-                Astuce : clique sur l'email / téléphone pour ouvrir ton application. Tu peux aussi copier depuis la
-                section Contact.
-              </p>
+
+              <div class="leaf reveal">
+                <h3 class="leaf__title">Coordonnées</h3>
+                <div class="dl">
+                  <div class="dl__row">
+                    <span class="dl__k">Email</span>
+                    <span class="dl__v"><a href="mailto:Khalilouybt@gmail.com">Khalilouybt@gmail.com</a></span>
+                  </div>
+                  <div class="dl__row">
+                    <span class="dl__k">Téléphone</span>
+                    <span class="dl__v"><a href="tel:+221773941018">+221 77 394 10 18</a></span>
+                  </div>
+                  <div class="dl__row">
+                    <span class="dl__k">LinkedIn</span>
+                    <span class="dl__v"
+                      ><a href="https://www.linkedin.com/in/khaliloutandia" target="_blank" rel="noreferrer"
+                        >linkedin.com/in/khaliloutandia</a
+                      ></span
+                    >
+                  </div>
+                  <div class="dl__row">
+                    <span class="dl__k">GitHub</span>
+                    <span class="dl__v"
+                      ><a href="https://github.com/khalilout" target="_blank" rel="noreferrer">github.com/khalilout</a></span
+                    >
+                  </div>
+                  <div class="dl__row">
+                    <span class="dl__k">Nationalité</span>
+                    <span class="dl__v">Mauritanienne</span>
+                  </div>
+                  <div class="dl__row">
+                    <span class="dl__k">Langues</span>
+                    <span class="dl__v">Français (DELF B2) · Arabe (intermédiaire) · Anglais (débutant)</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -243,89 +197,44 @@
 
       <section id="competences" class="section">
         <div class="container">
-          <div class="section__head">
-            <h2 class="section__title reveal">Compétences</h2>
-            <p class="section__subtitle reveal">
-              Un socle solide en développement web, et une expertise croissante en data science, machine learning et
-              cloud — bâtie projet après projet.
-            </p>
-          </div>
-
-          <div class="grid grid--3">
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Développement Web</h3>
-              <div class="tags" aria-label="Stack web">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">PHP</span>
-                <span class="tag">React</span>
-                <span class="tag">Laravel</span>
-                <span class="tag">Django</span>
-                <span class="tag">Flask</span>
-              </div>
-              <p class="muted small">Sites responsives, APIs REST, intégration front‑end, authentification.</p>
+          <div class="section__grid">
+            <div class="section__rail reveal">
+              <span class="section__num">02</span>
+              <span class="section__label">Compétences</span>
             </div>
-
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Data Science &amp; Machine Learning</h3>
-              <div class="tags" aria-label="Stack data">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas / NumPy</span>
-                <span class="tag">Scikit‑learn</span>
-                <span class="tag">XGBoost / LightGBM</span>
-                <span class="tag">SHAP</span>
-                <span class="tag">Optuna</span>
-                <span class="tag">Clustering (K‑means, DBSCAN, DTW)</span>
-                <span class="tag">SQL</span>
-              </div>
-              <p class="muted small">
-                EDA rigoureuse, prétraitement, modélisation supervisée &amp; non supervisée, interprétabilité.
+            <div class="section__body">
+              <p class="section__intro reveal">
+                Un socle solide en développement web, et une expertise croissante en data science, machine learning
+                et cloud — bâtie projet après projet.
               </p>
-            </div>
 
-            <div class="card card--glass reveal">
-              <h3 class="card__title">API, Cloud &amp; DevOps</h3>
-              <div class="tags" aria-label="Stack cloud et API">
-                <span class="tag">FastAPI</span>
-                <span class="tag">Streamlit</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">SQLAlchemy / Alembic</span>
-                <span class="tag">JWT</span>
-                <span class="tag">Docker</span>
-                <span class="tag">AWS (Lambda, S3, DynamoDB)</span>
-                <span class="tag">GitHub Actions (CI/CD)</span>
-                <span class="tag">Pytest</span>
+              <div class="reveal">
+                <table class="spec-table">
+                  <tbody>
+                    <tr>
+                      <th>Développement web</th>
+                      <td>HTML <span class="sep">·</span> CSS <span class="sep">·</span> JavaScript <span class="sep">·</span> PHP <span class="sep">·</span> React <span class="sep">·</span> Laravel <span class="sep">·</span> Django <span class="sep">·</span> Flask</td>
+                    </tr>
+                    <tr>
+                      <th>Data science &amp; ML</th>
+                      <td>Python <span class="sep">·</span> Pandas / NumPy <span class="sep">·</span> Scikit-learn <span class="sep">·</span> XGBoost / LightGBM <span class="sep">·</span> SHAP <span class="sep">·</span> Optuna <span class="sep">·</span> Clustering (K-means, DBSCAN, DTW) <span class="sep">·</span> SQL</td>
+                    </tr>
+                    <tr>
+                      <th>API, cloud &amp; DevOps</th>
+                      <td>FastAPI <span class="sep">·</span> Streamlit <span class="sep">·</span> PostgreSQL <span class="sep">·</span> SQLAlchemy / Alembic <span class="sep">·</span> JWT <span class="sep">·</span> Docker <span class="sep">·</span> AWS (Lambda, S3, DynamoDB) <span class="sep">·</span> GitHub Actions <span class="sep">·</span> Pytest</td>
+                    </tr>
+                    <tr>
+                      <th>Outils &amp; méthode</th>
+                      <td>Git / GitHub <span class="sep">·</span> MySQL <span class="sep">·</span> Jira (Agile) <span class="sep">·</span> StarUML <span class="sep">·</span> Microsoft Office <span class="sep">·</span> Flutter</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="spec-note">
+                  <strong>Ce que je recherche —</strong> des missions où je peux livrer vite, bien, et apprendre : web
+                  apps, automatisation, data pipelines, modèles de machine learning en production, ou intégrations
+                  cloud.
+                </p>
               </div>
-              <p class="muted small">
-                Conception d'API sécurisées, déploiement conteneurisé, pipelines serverless, tests automatisés.
-              </p>
-            </div>
-
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Outils &amp; Méthode</h3>
-              <div class="tags" aria-label="Outils">
-                <span class="tag">Git / GitHub</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">Jira (Agile)</span>
-                <span class="tag">StarUML</span>
-                <span class="tag">Microsoft Office</span>
-                <span class="tag">Flutter</span>
-              </div>
-              <p class="muted small">Conception, collaboration, documentation et rigueur — de l'idée au livrable.</p>
-            </div>
-          </div>
-
-          <div class="callout reveal">
-            <div class="callout__icon" aria-hidden="true">
-              <span class="icon" data-icon="bolt"></span>
-            </div>
-            <div class="callout__body">
-              <p class="callout__title">Ce que je recherche</p>
-              <p class="muted">
-                Des missions où je peux livrer vite, bien, et apprendre : web apps, automatisation, data pipelines,
-                modèles de machine learning en production, ou intégrations cloud.
-              </p>
             </div>
           </div>
         </div>
@@ -333,666 +242,520 @@
 
       <section id="experience" class="section">
         <div class="container">
-          <div class="section__head">
-            <h2 class="section__title reveal">Expérience</h2>
-            <p class="section__subtitle reveal">Stages &amp; projets académiques orientés produit.</p>
-          </div>
+          <div class="section__grid">
+            <div class="section__rail reveal">
+              <span class="section__num">03</span>
+              <span class="section__label">Expérience</span>
+            </div>
+            <div class="section__body">
+              <p class="section__intro reveal">Stages &amp; projets académiques orientés produit.</p>
 
-          <div class="timeline">
-            <article class="item card card--glass reveal">
-              <div class="item__head">
-                <h3 class="item__title">ISM Dakar — Stage (Chargé d'inscription et réinscription)</h3>
-                <p class="item__meta">Dakar, Sénégal • En cours</p>
-              </div>
-              <ul class="list">
-                <li>
-                  Gestion des inscriptions et réinscriptions des étudiants : accueil, vérification des dossiers,
-                  saisie et mise à jour dans le système de gestion académique.
-                </li>
-                <li>
-                  Suivi administratif des dossiers étudiants et coordination avec les services pédagogiques et
-                  financiers de l'établissement.
-                </li>
-                <li>
-                  Interface quotidienne avec les étudiants et les familles : rigueur, sens du service, gestion de
-                  volumes importants de dossiers dans les périodes de forte affluence.
-                </li>
-              </ul>
-            </article>
+              <div class="ledger" data-stagger="90">
+                <article class="ledger__entry reveal">
+                  <div class="ledger__when">
+                    En cours
+                    <div class="tag-live">● live</div>
+                  </div>
+                  <div>
+                    <h3 class="ledger__role">Chargé d'inscription et réinscription</h3>
+                    <p class="ledger__org">ISM Dakar — Dakar, Sénégal</p>
+                    <ul class="ledger__list">
+                      <li>
+                        Gestion des inscriptions et réinscriptions des étudiants : accueil, vérification des
+                        dossiers, saisie et mise à jour dans le système de gestion académique.
+                      </li>
+                      <li>
+                        Suivi administratif des dossiers étudiants et coordination avec les services pédagogiques et
+                        financiers de l'établissement.
+                      </li>
+                      <li>
+                        Interface quotidienne avec les étudiants et les familles : rigueur, sens du service, gestion
+                        de volumes importants de dossiers dans les périodes de forte affluence.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
 
-            <article class="item card card--glass reveal">
-              <div class="item__head">
-                <h3 class="item__title">Moov Mauritel — Stage (Développement Web / Assistant RH)</h3>
-                <p class="item__meta">Nouakchott, Mauritanie</p>
-              </div>
-              <ul class="list">
-                <li>Conception et développement d'une application web de gestion des stagiaires.</li>
-                <li>Stack : Laravel, PHP, MySQL, HTML/CSS/JavaScript.</li>
-                <li>Participation aux tâches RH liées au suivi des stagiaires.</li>
-                <li>
-                  PFE : réalisation d'une application destinée aux ouvriers pour gérer les travaux des clients.
-                </li>
-              </ul>
-            </article>
+                <article class="ledger__entry reveal">
+                  <div class="ledger__when">Stage</div>
+                  <div>
+                    <h3 class="ledger__role">Développement web / Assistant RH</h3>
+                    <p class="ledger__org">Moov Mauritel — Nouakchott, Mauritanie</p>
+                    <ul class="ledger__list">
+                      <li>Conception et développement d'une application web de gestion des stagiaires.</li>
+                      <li>Stack : Laravel, PHP, MySQL, HTML/CSS/JavaScript.</li>
+                      <li>Participation aux tâches RH liées au suivi des stagiaires.</li>
+                      <li>PFE : réalisation d'une application destinée aux ouvriers pour gérer les travaux des clients.</li>
+                    </ul>
+                  </div>
+                </article>
 
-            <article class="item card card--glass reveal">
-              <div class="item__head">
-                <h3 class="item__title">HTSOFT — Stage (Développement Web)</h3>
-                <p class="item__meta">Dakar, Sénégal</p>
+                <article class="ledger__entry reveal">
+                  <div class="ledger__when">Stage</div>
+                  <div>
+                    <h3 class="ledger__role">Développement web</h3>
+                    <p class="ledger__org">HTSOFT — Dakar, Sénégal</p>
+                    <ul class="ledger__list">
+                      <li>Création et maintenance d'applications web.</li>
+                      <li>Renforcement en Laravel, React, MySQL et intégration front-end.</li>
+                    </ul>
+                  </div>
+                </article>
               </div>
-              <ul class="list">
-                <li>Création et maintenance d'applications web.</li>
-                <li>Renforcement en Laravel, React, MySQL et intégration front‑end.</li>
-              </ul>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projets" class="section">
         <div class="container">
-          <div class="section__head">
-            <h2 class="section__title reveal">Projets</h2>
-            <p class="section__subtitle reveal">
-              Huit projets concrets, du prototype à la mise en production : web, data science, machine learning,
-              API et cloud. Chaque carte détaille l'intérêt du projet, la démarche, et pointe vers le code source
-              — et, quand elle existe, une démo en ligne.
-            </p>
-          </div>
+          <div class="section__grid">
+            <div class="section__rail reveal">
+              <span class="section__num">04</span>
+              <span class="section__label">Projets</span>
+            </div>
+            <div class="section__body">
+              <p class="section__intro reveal">
+                Huit dossiers, du prototype à la mise en production : web, data science, machine learning, API et
+                cloud. Chacun détaille l'intérêt du projet, la démarche, et pointe vers le code source — et, quand
+                elle existe, une démo en ligne.
+              </p>
 
-          <div class="proj-list">
-            <!-- 1. projet_React1 -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">Plateforme Articles &amp; Amis — API Laravel + Front React</h3>
-                  <p class="proj-card__tagline">Réseau social minimaliste : articles, commentaires, amis, profils</p>
-                </div>
-                <span class="proj-card__kicker">Full‑stack</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  Ce projet met en avant ma capacité à livrer une application <strong>de bout en bout</strong> :
-                  une API REST sécurisée d'un côté, une interface React moderne de l'autre. L'intérêt principal est
-                  de démontrer la maîtrise du cycle complet — modélisation des données, authentification,
-                  logique métier (relations sociales), consommation d'API et gestion d'état côté client — sur un
-                  cas réaliste plutôt qu'un simple CRUD.
-                </p>
-                <p>
-                  Le backend, en <strong>Laravel 12 / PHP 8.2+</strong>, expose des endpoints pour l'authentification
-                  par token, la gestion d'articles (création, édition, suppression, commentaires, likes), et un
-                  système d'amis complet : recherche d'utilisateurs, envoi/acceptation/refus de demandes, blocage et
-                  déblocage, consultation des profils et des articles d'un ami. Le tout est protégé par un middleware
-                  d'authentification léger appliqué à l'ensemble des routes sensibles.
-                </p>
-                <p>
-                  Le frontend, en <strong>React (Vite) + Tailwind CSS</strong>, consomme cette API à travers un
-                  routing complet (React Router) : tableau de bord, liste et éditeur d'articles, page d'amis, profil
-                  utilisateur, et internationalisation (i18next) pour préparer une interface multilingue. Un service
-                  de mock API est également fourni pour développer et démontrer le frontend indépendamment du
-                  backend.
-                </p>
-                <div class="tags">
-                  <span class="tag">Laravel 12</span>
-                  <span class="tag">PHP 8.2+</span>
-                  <span class="tag">MySQL</span>
-                  <span class="tag">REST API</span>
-                  <span class="tag">React</span>
-                  <span class="tag">Vite</span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">React Router</span>
-                  <span class="tag">i18next</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/projet_React1" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- 2. Cloud_AWS_Tandia -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">Pipeline météo serverless — AWS Lambda, S3 &amp; DynamoDB</h3>
-                  <p class="proj-card__tagline">ETL événementiel en Afrique de l'Ouest, 100% serverless</p>
-                </div>
-                <span class="proj-card__kicker">Cloud / ETL</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  Ce projet illustre une chaîne <strong>ETL serverless complète</strong> sur AWS, sans aucun serveur
-                  à gérer : collecte, transformation et export de données météo pour six villes d'Afrique de l'Ouest
-                  (Dakar, Thiès, Saint‑Louis, Bamako, Abidjan, Ouagadougou). L'intérêt est de manipuler de vrais
-                  services managés AWS et un déclenchement événementiel plutôt qu'une simple tâche planifiée.
-                </p>
-                <p>
-                  <strong>Lambda‑Collecte</strong> interroge l'API OpenWeatherMap pour chaque ville et dépose la
-                  réponse brute en JSON dans un bucket S3, sous un chemin daté (<code>raw/Ville/AAAA/MM/JJ/HH‑MM‑SS.json</code>).
-                  Le dépôt d'un nouveau fichier déclenche automatiquement <strong>Lambda‑Traitement</strong> via un
-                  événement S3 : la fonction extrait température, humidité, pression et vent, calcule les
-                  min/max/moyennes du jour en les combinant aux mesures déjà enregistrées dans
-                  <strong>DynamoDB</strong> (clé composite <code>ville#date</code>), puis déplace le fichier de
-                  <code>raw/</code> vers <code>processed/</code>. Enfin, <strong>Lambda‑Export</strong> génère chaque
-                  semaine un rapport CSV consolidé sur 7 jours et le publie dans S3.
-                </p>
-                <div class="tags">
-                  <span class="tag">AWS Lambda</span>
-                  <span class="tag">Amazon S3</span>
-                  <span class="tag">Amazon DynamoDB</span>
-                  <span class="tag">Python (boto3)</span>
-                  <span class="tag">API OpenWeatherMap</span>
-                  <span class="tag">ETL événementiel</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/Cloud_AWS_Tandia" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- 3. preprocessing_projet -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">Application de prétraitement de données (FastAPI + Streamlit)</h3>
-                  <p class="proj-card__tagline">Nettoyage guidé de datasets CSV/Excel, sans boîte noire</p>
-                </div>
-                <span class="proj-card__kicker">Data Engineering</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  L'intérêt de ce projet est de transformer une tâche que tout data scientist répète sans cesse — le
-                  nettoyage de données — en une <strong>application guidée et transparente</strong>. L'utilisateur
-                  charge un fichier CSV ou Excel et progresse à travers un pipeline en 6 étapes ; à chaque étape,
-                  l'application <strong>analyse statistiquement</strong> les données et recommande une méthode de
-                  traitement adaptée, sans jamais l'imposer : l'utilisateur garde la main pour valider ou changer
-                  chaque recommandation.
-                </p>
-                <p>
-                  Architecture en deux services découplés : une interface <strong>Streamlit</strong> qui ne contient
-                  aucune logique de traitement (elle affiche et appelle l'API), et un backend <strong>FastAPI</strong>
-                  qui porte toute la logique métier. Le fichier n'est envoyé qu'une seule fois (<code>POST /upload</code>) ;
-                  l'API renvoie un identifiant de dataset, et toutes les étapes suivantes le référencent plutôt que
-                  de renvoyer le fichier entier à chaque appel — le DataFrame vit en mémoire côté serveur et se
-                  transforme progressivement.
-                </p>
-                <details class="more">
-                  <summary>Voir le détail des 6 étapes du pipeline</summary>
-                  <div class="more__content">
-                    <p>
-                      <strong>1. Analyse initiale</strong> — détection automatique des types de colonnes, taux de
-                      valeurs manquantes, asymétrie (skewness), corrélations, et détection de séries temporelles.
-                    </p>
-                    <p>
-                      <strong>2. Valeurs manquantes</strong> — un test statistique (Student pour le numérique, Chi²
-                      pour le catégoriel) détermine si l'absence de valeur est aléatoire (<strong>MCAR</strong>) ou
-                      liée à d'autres colonnes (<strong>MAR/MNAR</strong>), et recommande en conséquence des méthodes
-                      simples (moyenne, médiane, mode, interpolation) ou avancées (KNNImputer, IterativeImputer,
-                      imputation par groupe temporel). Le motif des valeurs manquantes est visualisé via une matrice
-                      <code>missingno</code>.
-                    </p>
-                    <p>
-                      <strong>3. Valeurs aberrantes</strong> — la méthode est choisie selon l'asymétrie de la
-                      distribution : Z‑score (symétrique), IQR (asymétrie modérée), ou Winsorisation (forte
-                      asymétrie), avec comparaison visuelle avant/après.
-                    </p>
-                    <p>
-                      <strong>4. Feature scaling</strong> — RobustScaler en priorité si des outliers sont détectés,
-                      sinon StandardScaler ou MinMaxScaler selon la distribution.
-                    </p>
-                    <p>
-                      <strong>5. Encodage</strong> — Label Encoding, One‑Hot Encoding, ou encodage ordinal avec ordre
-                      personnalisable directement depuis l'interface, selon la cardinalité de chaque variable.
-                    </p>
-                    <p>
-                      <strong>6. Visualisation &amp; export</strong> — résumé avant/après, journal complet des
-                      traitements appliqués, export CSV du dataset nettoyé, et génération d'un
-                      <strong>script Python autonome</strong> reproduisant fidèlement tout le pipeline appliqué —
-                      utile pour vérifier qu'il n'y a aucune boîte noire, ou pour réutiliser le traitement ailleurs.
-                    </p>
-                    <p>
-                      L'ensemble est couvert par <strong>58 tests pytest</strong> (dont un test d'intégration
-                      end‑to‑end du pipeline complet), conteneurisé avec Docker/docker‑compose, et intégré à une CI
-                      GitHub Actions qui relance la suite de tests à chaque push.
-                    </p>
+              <div data-stagger="60">
+                <!-- 01 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.01</span>
+                    <h3 class="dossier__title">Plateforme Articles &amp; Amis</h3>
+                    <span class="dossier__cat">Full-stack</span>
                   </div>
-                </details>
-                <div class="tags">
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">Streamlit</span>
-                  <span class="tag">Pandas / NumPy</span>
-                  <span class="tag">Scikit‑learn</span>
-                  <span class="tag">SciPy</span>
-                  <span class="tag">Plotly / Matplotlib</span>
-                  <span class="tag">Pytest (58 tests)</span>
-                  <span class="tag">Docker</span>
-                  <span class="tag">CI/CD GitHub Actions</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/preprocessing_projet" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- 4. detection_desfraudes_bancaires_ML_Sup -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">FraudGuard — Détection de fraude bancaire par carte de crédit</h3>
-                  <p class="proj-card__tagline">284 807 transactions, 0,17% de fraudes : modélisation, API et dashboard</p>
-                </div>
-                <span class="proj-card__kicker">Machine Learning supervisé</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  Ce projet traite un problème classique mais exigeant : détecter une <strong>fraude extrêmement
-                  rare</strong> (492 fraudes sur 284 807 transactions du jeu de données
-                  <a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud" target="_blank" rel="noreferrer">Credit Card Fraud Detection (ULB)</a>)
-                  sans se laisser piéger par le déséquilibre de classes. Son intérêt est de montrer une démarche de
-                  modélisation <strong>complète et honnête</strong> : exploration en notebook, comparaison rigoureuse
-                  de plusieurs modèles, choix de métriques adaptées, puis mise en production via une API et un
-                  dashboard.
-                </p>
-                <p>
-                  ⚠️ <strong>L'accuracy n'est jamais utilisée comme métrique de référence</strong> : avec 99,83% de
-                  transactions normales, un modèle qui prédirait toujours « normal » atteindrait déjà 99,83%
-                  d'accuracy sans détecter la moindre fraude. Toutes les décisions s'appuient sur precision, recall,
-                  F1 et PR‑AUC.
-                </p>
-                <div class="table-wrap">
-                  <table class="mini-table">
-                    <thead>
-                      <tr><th>Modèle</th><th>Precision</th><th>Recall</th><th>F1</th><th>PR‑AUC</th></tr>
-                    </thead>
-                    <tbody>
-                      <tr><td>Logistic Regression</td><td>0,061</td><td>0,918</td><td>0,114</td><td>0,716</td></tr>
-                      <tr><td>Random Forest</td><td>0,842</td><td>0,816</td><td>0,829</td><td>0,829</td></tr>
-                      <tr><td><strong>XGBoost (retenu)</strong></td><td><strong>0,882</strong></td><td>0,837</td><td><strong>0,859</strong></td><td><strong>0,879</strong></td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <details class="more">
-                  <summary>Voir la démarche complète et les résultats détaillés</summary>
-                  <div class="more__content">
+                  <p class="dossier__tagline">API Laravel + front React — réseau social minimaliste</p>
+                  <div class="dossier__body">
                     <p>
-                      <strong>XGBoost</strong> (avec <code>scale_pos_weight</code> pour compenser le déséquilibre) est
-                      retenu face à la régression logistique et à la random forest. Un <strong>seuil de décision
-                      optimisé à 0,9238</strong> (au lieu de 0,5 par défaut) améliore encore le compromis :
-                      precision 0,882 → <strong>0,942</strong>, F1 0,859 → <strong>0,880</strong>. Une validation
-                      croisée à 5 plis confirme la stabilité du résultat (PR‑AUC moyen 0,855 ± 0,018).
+                      Ce projet met en avant ma capacité à livrer une application <strong>de bout en bout</strong> :
+                      une API REST sécurisée d'un côté, une interface React moderne de l'autre. L'intérêt principal
+                      est de démontrer la maîtrise du cycle complet — modélisation des données, authentification,
+                      logique métier (relations sociales), consommation d'API et gestion d'état côté client — sur un
+                      cas réaliste plutôt qu'un simple CRUD.
                     </p>
                     <p>
-                      <strong>SMOTE testé et écarté</strong> : le sur‑échantillonnage synthétique de la classe
-                      minoritaire donne un PR‑AUC légèrement inférieur (0,862) à la simple pondération de classe —
-                      sur ce dataset, <code>scale_pos_weight</code> est suffisant et plus simple à maintenir.
+                      Le backend, en <strong>Laravel 12 / PHP 8.2+</strong>, expose des endpoints pour
+                      l'authentification par token, la gestion d'articles (création, édition, suppression,
+                      commentaires, likes), et un système d'amis complet : recherche d'utilisateurs,
+                      envoi/acceptation/refus de demandes, blocage et déblocage, consultation des profils et des
+                      articles d'un ami.
                     </p>
                     <p>
-                      Le modèle entraîné dans le notebook est sauvegardé (<code>.joblib</code>) puis chargé au
-                      démarrage par une <strong>API FastAPI</strong> qui expose le scoring en temps réel, sans
-                      aucune dépendance à Jupyter en production. Un <strong>dashboard Streamlit</strong> (« FraudGuard »)
-                      consomme cette API pour proposer une interface de test interactive. L'ensemble est couvert par
-                      16 tests pytest (chargement du modèle, cohérence des prédictions, robustesse à l'ordre des
-                      colonnes, validation des entrées, endpoint batch) et intégré à une CI GitHub Actions.
+                      Le frontend, en <strong>React (Vite) + Tailwind CSS</strong>, consomme cette API à travers un
+                      routing complet (React Router) : tableau de bord, liste et éditeur d'articles, page d'amis,
+                      profil utilisateur, et internationalisation (i18next).
                     </p>
-                    <p>
-                      <strong>Limites assumées</strong> : modèle entraîné sur des données de 2013 (un recalibrage
-                      serait nécessaire avant tout usage réel), stockage local des artefacts sans registre de
-                      modèles versionné, pas d'authentification sur l'API — autant de points identifiés et
-                      documentés plutôt que passés sous silence.
-                    </p>
+                    <div class="dossier__stack">
+                      <span>Laravel 12</span><span>PHP 8.2+</span><span>MySQL</span><span>REST API</span>
+                      <span>React</span><span>Vite</span><span>Tailwind CSS</span><span>i18next</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/projet_React1" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                    </div>
                   </div>
-                </details>
-                <div class="tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">XGBoost</span>
-                  <span class="tag">Scikit‑learn</span>
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">Streamlit</span>
-                  <span class="tag">Pytest (16 tests)</span>
-                  <span class="tag">Docker</span>
-                  <span class="tag">CI/CD GitHub Actions</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/detection_desfraudes_bancaires_ML_Sup" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-                <a class="btn btn--primary" href="https://detection-fraudebancaire.streamlit.app/" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="play"></span>
-                  <span>Démo FraudGuard (Streamlit)</span>
-                </a>
-              </div>
-            </article>
+                </article>
 
-            <!-- 5. Dashboard-interactif-Streamlit -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">SalesVision USA — Dashboard interactif Streamlit</h3>
-                  <p class="proj-card__tagline">Ventes e‑commerce aux États‑Unis : KPIs, clients, tendance et carte</p>
-                </div>
-                <span class="proj-card__kicker">Data Visualization</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  L'intérêt de ce projet est de construire un <strong>dashboard business complet</strong> à partir
-                  d'un jeu de données brut de commandes e‑commerce américaines, avec une interface pensée pour un
-                  décideur plutôt que pour un data scientist. L'interface Streamlit s'organise en une
-                  <strong>barre latérale de filtres</strong> (période, région, état, pays, ville, statut de
-                  commande) qui recalcule en direct les quatre onglets du dashboard :
-                </p>
-                <p>
-                  <strong>Indicateurs clés</strong> — chiffre d'affaires, nombre de commandes, panier moyen, taux
-                  d'annulation, ventilés par catégorie et par région, ainsi que la répartition par mode de paiement.
-                  <strong>Clients</strong> — top 10 des meilleurs clients par montant dépensé et top 10 des clients
-                  les plus fidèles par nombre de commandes, avec la répartition par âge et par genre.
-                  <strong>Tendance</strong> — évolution mensuelle des ventes, avec une <strong>prévision à 3 mois</strong>
-                  calculée par lissage exponentiel de Holt‑Winters (statsmodels), et un tableau de données détaillées
-                  téléchargeable. <strong>Carte</strong> — répartition géographique des ventes par État américain.
-                </p>
-                <div class="tags">
-                  <span class="tag">Streamlit</span>
-                  <span class="tag">Pandas</span>
-                  <span class="tag">Plotly</span>
-                  <span class="tag">Statsmodels (Holt‑Winters)</span>
-                  <span class="tag">Visualisation géographique</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/Dashboard-interactif-Streamlit" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-                <a class="btn btn--primary" href="https://dashboard-interactif.streamlit.app/" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="play"></span>
-                  <span>Démo SalesVision (Streamlit)</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- 6. ML_SUP-Prediction_du_Churn_Client -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">Churn Radar — Prédiction du churn client (Telco)</h3>
-                  <p class="proj-card__tagline">Démarche ML de bout en bout, en 6 missions cadrées</p>
-                </div>
-                <span class="proj-card__kicker">Machine Learning supervisé</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  Ce projet répond à un vrai problème métier : un opérateur télécom veut anticiper les clients sur le
-                  point de résilier pour leur adresser en priorité une offre de rétention, sachant qu'un
-                  <strong>faux négatif coûte bien plus cher qu'un faux positif</strong>. Son intérêt est de suivre une
-                  méthodologie complète et vérifiable, en 6 étapes cadrées à l'avance (cadrage, exploration, pipeline
-                  sans fuite, benchmark de modèles, optimisation/interprétabilité, déploiement), sur ~7 000 clients
-                  avec 27% de taux de churn.
-                </p>
-                <div class="table-wrap">
-                  <table class="mini-table">
-                    <thead>
-                      <tr><th>Étape</th><th>Résultat clé</th></tr>
-                    </thead>
-                    <tbody>
-                      <tr><td>Cadrage (M0)</td><td>Métrique F1 retenue, seuil de réussite F1 ≥ 0,60 fixé <em>a priori</em></td></tr>
-                      <tr><td>Exploration (M1)</td><td>Aucune fuite de données détectée ; 3 hypothèses métier confirmées</td></tr>
-                      <tr><td>Pipeline (M2)</td><td>ColumnTransformer fit uniquement sur train ; feature engineering testé puis écarté (pas de gain)</td></tr>
-                      <tr><td>Benchmark (M3)</td><td>LightGBM, XGBoost et Logistic Regression quasi ex æquo (F1 ≈ 0,63)</td></tr>
-                      <tr><td>Optimisation (M4)</td><td>Tuning Optuna (60 essais), calibration isotonique, interprétabilité SHAP</td></tr>
-                      <tr><td>Déploiement (M5)</td><td>API FastAPI + dashboard Streamlit, Docker, 5 tests pytest</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <details class="more">
-                  <summary>Voir le choix du modèle final et l'interprétabilité</summary>
-                  <div class="more__content">
-                    <p>
-                      Le test de Wilcoxon entre LightGBM et la régression logistique donne <strong>p = 0,4375
-                      (non significatif)</strong> : l'écart de performance ne justifiant pas de sacrifier
-                      l'interprétabilité, c'est la <strong>régression logistique calibrée</strong> qui est retenue
-                      comme modèle final, conformément à l'exigence d'explicabilité fixée dès le cadrage (M0).
-                    </p>
-                    <p>
-                      Le <strong>tuning Optuna</strong> (60 essais, 6 hyperparamètres) porte le F1 à 0,6335 — la
-                      pondération de classe (<code>class_weight</code>) expliquant à elle seule 96,9% du gain. La
-                      <strong>calibration isotonique</strong> réduit le Brier score de 0,169 à 0,140. L'analyse
-                      <strong>SHAP</strong> montre que <code>MonthlyCharges</code> et <code>tenure</code> dominent :
-                      charges élevées et faible ancienneté poussent vers le churn, tandis qu'un contrat de 2 ans
-                      protège fortement. Le <strong>seuil de décision est optimisé à 0,13</strong> (F2‑score), très
-                      inférieur à 0,5, pour maximiser le rappel conformément aux coûts d'erreur définis en amont.
-                    </p>
-                    <p>
-                      Le dashboard Streamlit propose 5 pages (vue d'ensemble, prédiction en direct, exploration des
-                      données, performance du modèle, à propos), et un plan de monitoring complet est documenté
-                      (<code>MODEL_CARD.md</code>, <code>MONITORING.md</code>) : suivi du data drift (PSI /
-                      Kolmogorov‑Smirnov), du concept drift et de la performance dans le temps, avec l'outil
-                      open‑source Evidently AI recommandé.
-                    </p>
+                <!-- 02 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.02</span>
+                    <h3 class="dossier__title">Pipeline météo serverless</h3>
+                    <span class="dossier__cat">Cloud / ETL</span>
                   </div>
-                </details>
-                <div class="tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Scikit‑learn</span>
-                  <span class="tag">LightGBM / XGBoost</span>
-                  <span class="tag">Optuna</span>
-                  <span class="tag">SHAP</span>
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">Streamlit</span>
-                  <span class="tag">Docker</span>
-                  <span class="tag">Pytest</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/ML_SUP-Prediction_du_Churn_Client" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-                <a class="btn btn--primary" href="https://predictionduchurnclient.streamlit.app/" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="play"></span>
-                  <span>Démo Churn Radar (Streamlit)</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- 7. fastapi_projet -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">StageFlow — API sécurisée de gestion des stages</h3>
-                  <p class="proj-card__tagline">API métier multi‑rôles, sans interface : FastAPI + PostgreSQL</p>
-                </div>
-                <span class="proj-card__kicker">Backend / API</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  Ce projet n'a volontairement <strong>pas d'interface graphique</strong> : c'est une API interne
-                  pure, ce qui en fait un bon test de la qualité d'une architecture backend « nue », jugée sur sa
-                  documentation OpenAPI, ses tests et sa rigueur d'implémentation plutôt que sur son rendu visuel.
-                  Elle permet à un établissement de suivre les offres de stage, les candidatures, les validations
-                  pédagogiques et les avis des encadrants.
-                </p>
-                <p>
-                  <strong>Quatre rôles</strong> aux permissions distinctes : l'<code>étudiant</code> consulte les
-                  offres publiées, candidate, suit et retire ses candidatures ; l'<code>entreprise</code> crée des
-                  offres en brouillon, les soumet, et ne voit que les candidatures de ses propres offres ; le
-                  <code>responsable pédagogique</code> publie ou refuse une offre, accepte ou refuse une candidature,
-                  et consulte les statistiques globales ; l'<code>admin</code> gère les comptes.
-                </p>
-                <p>
-                  Le point d'architecture le plus intéressant : la table <code>Entreprise</code> est séparée du rôle
-                  applicatif. Le rôle <code>entreprise</code> gère les permissions, mais une entreprise est une
-                  <strong>entité métier</strong> à part entière (nom, description), liée en 1‑à‑1 au compte
-                  utilisateur. Cette séparation est nécessaire pour respecter deux règles strictes : une offre doit
-                  être rattachée à une entreprise précise, et une entreprise ne doit voir que les candidatures de
-                  <em>ses</em> offres — une isolation qui repose sur la comparaison entre entreprises, pas sur
-                  l'identifiant utilisateur.
-                </p>
-                <p>
-                  Authentification par <strong>JWT</strong> (access + refresh tokens), base <strong>PostgreSQL</strong>
-                  via SQLAlchemy asynchrone, migrations gérées par <strong>Alembic</strong> (appliquées automatiquement
-                  au démarrage du conteneur Docker), et architecture en couches stricte : aucune route n'appelle
-                  SQLAlchemy directement, tout passe par une couche <code>repositories/</code>. Les tests utilisent
-                  une base SQLite en mémoire, isolée de la base de développement, et la qualité du code est vérifiée
-                  par <code>ruff</code> et <code>mypy</code>.
-                </p>
-                <div class="tags">
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">SQLAlchemy (async)</span>
-                  <span class="tag">Alembic</span>
-                  <span class="tag">JWT</span>
-                  <span class="tag">Docker Compose</span>
-                  <span class="tag">Pytest</span>
-                  <span class="tag">Ruff / Mypy</span>
-                </div>
-              </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/fastapi_projet" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-              </div>
-            </article>
-
-            <!-- 8. Projet_ML_Unsupervised -->
-            <article class="proj-card card card--glass reveal">
-              <div class="proj-card__top">
-                <div>
-                  <h3 class="proj-card__title">Clustering des foyers londoniens — London Smart Meters</h3>
-                  <p class="proj-card__tagline">Deux approches de clustering non supervisé, comparées et validées</p>
-                </div>
-                <span class="proj-card__kicker">Machine Learning non supervisé</span>
-              </div>
-              <div class="proj-card__body">
-                <p>
-                  Ce projet exploite les données de compteurs intelligents de Londres
-                  (<a href="https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london" target="_blank" rel="noreferrer">London Smart Meters, Kaggle</a>) —
-                  des milliers de foyers mesurés toutes les demi‑heures — pour répondre à une question business :
-                  <strong>peut‑on regrouper les foyers en profils de consommation types</strong>, utiles à un
-                  fournisseur d'électricité pour adapter ses offres tarifaires ? Son intérêt est de comparer
-                  <strong>deux approches méthodologiquement différentes</strong> du même problème plutôt que de se
-                  contenter d'un seul algorithme.
-                </p>
-                <p>
-                  <strong>Approche B (features)</strong> — chaque foyer est résumé par ses 48 valeurs moyennes
-                  demi‑horaires normalisées (forme de la courbe indépendamment du volume), puis regroupé par
-                  K‑means, CAH, GMM et DBSCAN. <strong>Approche A (DTW)</strong> — au contraire, elle travaille
-                  directement sur la <strong>forme temporelle brute</strong> des courbes de charge, à l'aide de la
-                  distance Dynamic Time Warping, avec K‑means DTW, CAH et K‑Shape.
-                </p>
-                <details class="more">
-                  <summary>Voir la démarche de validation et les conclusions métier</summary>
-                  <div class="more__content">
+                  <p class="dossier__tagline">AWS Lambda, S3 &amp; DynamoDB — 100% serverless</p>
+                  <div class="dossier__body">
                     <p>
-                      La robustesse de chaque approche est vérifiée par l'<strong>Adjusted Rand Index</strong> entre
-                      méthodes (convergence entre K‑means, CAH, GMM/K‑Shape) et par une analyse de
-                      <strong>stabilité temporelle</strong> (les clusters obtenus sur une période restent‑ils
-                      cohérents sur une autre ?). Le tableau de bord Streamlit multi‑pages reproduit l'intégralité de
-                      la démarche : EDA (volumétrie, distributions, courbes de charge moyennes, effets saison /
-                      calendrier / météo), Approche B, Approche A, et une <strong>synthèse comparative</strong> qui
-                      croise les deux approches avec le profil socio‑économique <strong>ACORN</strong> et le type de
-                      tarif souscrit.
+                      Ce projet illustre une chaîne <strong>ETL serverless complète</strong> sur AWS, sans aucun
+                      serveur à gérer : collecte, transformation et export de données météo pour six villes
+                      d'Afrique de l'Ouest (Dakar, Thiès, Saint-Louis, Bamako, Abidjan, Ouagadougou). L'intérêt est
+                      de manipuler de vrais services managés AWS et un déclenchement événementiel plutôt qu'une
+                      simple tâche planifiée.
                     </p>
                     <p>
-                      La synthèse conclut sur l'implication métier : les clusters qui se retrouvent de façon
-                      cohérente dans les deux approches sont ceux sur lesquels un fournisseur d'électricité peut
-                      construire des offres différenciées avec le plus de confiance, tandis que les foyers aux
-                      profils instables entre approches appellent à la prudence avant toute segmentation
-                      commerciale.
+                      <strong>Lambda-Collecte</strong> interroge l'API OpenWeatherMap pour chaque ville et dépose la
+                      réponse brute en JSON dans un bucket S3, sous un chemin daté
+                      (<code>raw/Ville/AAAA/MM/JJ/HH-MM-SS.json</code>). Le dépôt d'un nouveau fichier déclenche
+                      automatiquement <strong>Lambda-Traitement</strong> via un événement S3 : la fonction extrait
+                      température, humidité, pression et vent, calcule les min/max/moyennes du jour en les combinant
+                      aux mesures déjà enregistrées dans <strong>DynamoDB</strong> (clé composite
+                      <code>ville#date</code>), puis déplace le fichier vers <code>processed/</code>. Enfin,
+                      <strong>Lambda-Export</strong> génère chaque semaine un rapport CSV consolidé.
                     </p>
+                    <div class="dossier__stack">
+                      <span>AWS Lambda</span><span>Amazon S3</span><span>Amazon DynamoDB</span>
+                      <span>Python (boto3)</span><span>API OpenWeatherMap</span><span>ETL événementiel</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/Cloud_AWS_Tandia" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                    </div>
                   </div>
-                </details>
-                <div class="tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Scikit‑learn</span>
-                  <span class="tag">DTW / K‑Shape</span>
-                  <span class="tag">Clustering (K‑means, CAH, GMM, DBSCAN)</span>
-                  <span class="tag">Streamlit (multi‑pages)</span>
-                  <span class="tag">Pandas / NumPy</span>
-                </div>
+                </article>
+
+                <!-- 03 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.03</span>
+                    <h3 class="dossier__title">Application de prétraitement de données</h3>
+                    <span class="dossier__cat">Data engineering</span>
+                  </div>
+                  <p class="dossier__tagline">FastAPI + Streamlit — nettoyage guidé, sans boîte noire</p>
+                  <div class="dossier__body">
+                    <p>
+                      L'intérêt de ce projet est de transformer une tâche que tout data scientist répète sans
+                      cesse — le nettoyage de données — en une <strong>application guidée et transparente</strong>.
+                      L'utilisateur charge un fichier CSV ou Excel et progresse à travers un pipeline en 6 étapes ;
+                      à chaque étape, l'application <strong>analyse statistiquement</strong> les données et
+                      recommande une méthode adaptée, sans jamais l'imposer.
+                    </p>
+                    <p>
+                      Architecture en deux services découplés : une interface <strong>Streamlit</strong> sans aucune
+                      logique de traitement, et un backend <strong>FastAPI</strong> qui porte toute la logique
+                      métier. Le fichier n'est envoyé qu'une seule fois ; toutes les étapes suivantes référencent un
+                      identifiant de dataset plutôt que de renvoyer le fichier entier à chaque appel.
+                    </p>
+                    <details class="fold">
+                      <summary>Voir le détail des 6 étapes du pipeline</summary>
+                      <div class="fold__content">
+                        <p><strong>1. Analyse initiale</strong> — types de colonnes, valeurs manquantes, asymétrie, corrélations, séries temporelles.</p>
+                        <p><strong>2. Valeurs manquantes</strong> — un test statistique (Student / Chi²) détermine si l'absence est aléatoire (MCAR) ou liée à d'autres colonnes (MAR/MNAR), et recommande imputation simple ou avancée (KNNImputer, IterativeImputer).</p>
+                        <p><strong>3. Valeurs aberrantes</strong> — Z-score, IQR ou Winsorisation selon l'asymétrie de la distribution.</p>
+                        <p><strong>4. Feature scaling</strong> — RobustScaler si outliers détectés, sinon StandardScaler ou MinMaxScaler.</p>
+                        <p><strong>5. Encodage</strong> — Label / One-Hot / ordinal personnalisable selon la cardinalité.</p>
+                        <p><strong>6. Visualisation &amp; export</strong> — journal des traitements, export CSV, et génération d'un <strong>script Python autonome</strong> reproduisant le pipeline — pour vérifier qu'il n'y a aucune boîte noire.</p>
+                        <p>L'ensemble est couvert par <strong>58 tests pytest</strong>, conteneurisé (Docker/docker-compose), et intégré à une CI GitHub Actions.</p>
+                      </div>
+                    </details>
+                    <div class="dossier__stack">
+                      <span>FastAPI</span><span>Streamlit</span><span>Pandas / NumPy</span><span>Scikit-learn</span>
+                      <span>SciPy</span><span>Plotly</span><span>Pytest (58)</span><span>Docker</span><span>CI/CD</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/preprocessing_projet" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                      <a class="textlink" href="https://preprocessingprojet.streamlit.app/" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="play"></span> Démo Prétraitement de données
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 04 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.04</span>
+                    <h3 class="dossier__title">FraudGuard — détection de fraude bancaire</h3>
+                    <span class="dossier__cat">Machine learning supervisé</span>
+                  </div>
+                  <p class="dossier__tagline">284 807 transactions, 0,17% de fraudes : modélisation, API et dashboard</p>
+                  <div class="dossier__body">
+                    <p>
+                      Ce projet traite un problème classique mais exigeant : détecter une
+                      <strong>fraude extrêmement rare</strong> (492 fraudes sur 284 807 transactions du jeu de
+                      données <a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud" target="_blank" rel="noreferrer">Credit Card Fraud Detection, ULB</a>)
+                      sans se laisser piéger par le déséquilibre de classes.
+                    </p>
+                    <p>
+                      ⚠️ <strong>L'accuracy n'est jamais utilisée comme métrique de référence</strong> : avec 99,83%
+                      de transactions normales, un modèle qui prédirait toujours « normal » atteindrait déjà cette
+                      accuracy sans détecter la moindre fraude. Toutes les décisions s'appuient sur precision,
+                      recall, F1 et PR-AUC.
+                    </p>
+                    <div class="data-table-wrap">
+                      <table class="data-table">
+                        <thead><tr><th>Modèle</th><th>Precision</th><th>Recall</th><th>F1</th><th>PR-AUC</th></tr></thead>
+                        <tbody>
+                          <tr><td>Logistic Regression</td><td>0,061</td><td>0,918</td><td>0,114</td><td>0,716</td></tr>
+                          <tr><td>Random Forest</td><td>0,842</td><td>0,816</td><td>0,829</td><td>0,829</td></tr>
+                          <tr><td><strong>XGBoost (retenu)</strong></td><td><strong>0,882</strong></td><td>0,837</td><td><strong>0,859</strong></td><td><strong>0,879</strong></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <details class="fold">
+                      <summary>Voir la démarche complète et les résultats détaillés</summary>
+                      <div class="fold__content">
+                        <p>
+                          <strong>XGBoost</strong> (avec <code>scale_pos_weight</code>) est retenu face à la
+                          régression logistique et la random forest. Un <strong>seuil optimisé à 0,9238</strong>
+                          améliore encore le compromis : precision 0,882 → <strong>0,942</strong>, F1 0,859 →
+                          <strong>0,880</strong>. Une validation croisée à 5 plis confirme la stabilité (PR-AUC moyen
+                          0,855 ± 0,018).
+                        </p>
+                        <p>
+                          <strong>SMOTE testé et écarté</strong> : PR-AUC légèrement inférieur (0,862) à la simple
+                          pondération de classe. Le modèle est chargé par une <strong>API FastAPI</strong> et
+                          consommé par un <strong>dashboard Streamlit</strong> (FraudGuard). 16 tests pytest et CI
+                          GitHub Actions complètent l'ensemble.
+                        </p>
+                        <p>
+                          <strong>Limites assumées</strong> : données de 2013 (recalibrage nécessaire avant usage
+                          réel), pas de registre de modèles versionné, pas d'authentification sur l'API.
+                        </p>
+                      </div>
+                    </details>
+                    <div class="dossier__stack">
+                      <span>Python</span><span>XGBoost</span><span>Scikit-learn</span><span>FastAPI</span>
+                      <span>Streamlit</span><span>Pytest (16)</span><span>Docker</span><span>CI/CD</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/detection_desfraudes_bancaires_ML_Sup" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                      <a class="textlink" href="https://detection-fraudebancaire.streamlit.app/" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="play"></span> Démo FraudGuard
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 05 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.05</span>
+                    <h3 class="dossier__title">SalesVision USA</h3>
+                    <span class="dossier__cat">Data visualization</span>
+                  </div>
+                  <p class="dossier__tagline">Dashboard interactif Streamlit — ventes e-commerce aux États-Unis</p>
+                  <div class="dossier__body">
+                    <p>
+                      L'intérêt de ce projet est de construire un <strong>dashboard business complet</strong> à
+                      partir d'un jeu de données brut de commandes e-commerce américaines, avec une interface pensée
+                      pour un décideur plutôt qu'un data scientist. Une barre latérale de filtres (période, région,
+                      état, pays, ville, statut de commande) recalcule en direct quatre onglets :
+                      <strong>indicateurs clés</strong> (CA, commandes, panier moyen, taux d'annulation),
+                      <strong>clients</strong> (top 10 par montant et par fidélité, répartition âge/genre),
+                      <strong>tendance</strong> (évolution mensuelle + prévision à 3 mois par lissage de
+                      Holt-Winters) et <strong>carte</strong> (ventes par État américain).
+                    </p>
+                    <div class="dossier__stack">
+                      <span>Streamlit</span><span>Pandas</span><span>Plotly</span><span>Statsmodels</span><span>Cartographie</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/Dashboard-interactif-Streamlit" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                      <a class="textlink" href="https://dashboard-interactif.streamlit.app/" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="play"></span> Démo SalesVision
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 06 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.06</span>
+                    <h3 class="dossier__title">Churn Radar — prédiction du churn client</h3>
+                    <span class="dossier__cat">Machine learning supervisé</span>
+                  </div>
+                  <p class="dossier__tagline">Telco — démarche ML de bout en bout, en 6 missions cadrées</p>
+                  <div class="dossier__body">
+                    <p>
+                      Un opérateur télécom veut anticiper les clients sur le point de résilier, sachant qu'un
+                      <strong>faux négatif coûte bien plus cher qu'un faux positif</strong>. Le projet suit une
+                      méthodologie cadrée en 6 étapes sur ~7 000 clients (27% de churn) : cadrage, exploration,
+                      pipeline sans fuite, benchmark de modèles, optimisation/interprétabilité, déploiement.
+                    </p>
+                    <div class="data-table-wrap">
+                      <table class="data-table">
+                        <thead><tr><th>Étape</th><th>Résultat clé</th></tr></thead>
+                        <tbody>
+                          <tr><td>Cadrage</td><td>F1 retenu, seuil de réussite F1 ≥ 0,60 fixé <em>a priori</em></td></tr>
+                          <tr><td>Exploration</td><td>Aucune fuite détectée · 3 hypothèses métier confirmées</td></tr>
+                          <tr><td>Benchmark</td><td>LightGBM / XGBoost / LogReg quasi ex æquo (F1 ≈ 0,63)</td></tr>
+                          <tr><td>Optimisation</td><td>Optuna (60 essais) · calibration · SHAP</td></tr>
+                          <tr><td>Déploiement</td><td>API FastAPI + dashboard Streamlit, Docker, pytest</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <details class="fold">
+                      <summary>Voir le choix du modèle final et l'interprétabilité</summary>
+                      <div class="fold__content">
+                        <p>
+                          Le test de Wilcoxon entre LightGBM et la régression logistique donne
+                          <strong>p = 0,4375 (non significatif)</strong> : c'est donc la
+                          <strong>régression logistique calibrée</strong> qui est retenue, conformément à l'exigence
+                          d'explicabilité fixée dès le cadrage.
+                        </p>
+                        <p>
+                          Le tuning <strong>Optuna</strong> porte le F1 à 0,6335 — la pondération de classe expliquant
+                          96,9% du gain. L'analyse <strong>SHAP</strong> montre que <code>MonthlyCharges</code> et
+                          <code>tenure</code> dominent. Le <strong>seuil de décision est optimisé à 0,13</strong>
+                          (F2-score) pour maximiser le rappel. Un plan de monitoring complet est documenté (PSI,
+                          Kolmogorov-Smirnov, Evidently AI).
+                        </p>
+                      </div>
+                    </details>
+                    <div class="dossier__stack">
+                      <span>Scikit-learn</span><span>LightGBM / XGBoost</span><span>Optuna</span><span>SHAP</span>
+                      <span>FastAPI</span><span>Streamlit</span><span>Docker</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/ML_SUP-Prediction_du_Churn_Client" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                      <a class="textlink" href="https://predictionduchurnclient.streamlit.app/" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="play"></span> Démo Churn Radar
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 07 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.07</span>
+                    <h3 class="dossier__title">StageFlow — API de gestion des stages</h3>
+                    <span class="dossier__cat">Backend / API</span>
+                  </div>
+                  <p class="dossier__tagline">Sans interface graphique : FastAPI + PostgreSQL, multi-rôles</p>
+                  <div class="dossier__body">
+                    <p>
+                      Ce projet n'a volontairement <strong>pas d'interface graphique</strong> : une API interne pure,
+                      jugée sur sa documentation OpenAPI, ses tests et sa rigueur d'implémentation. Elle permet de
+                      suivre offres de stage, candidatures, validations pédagogiques et avis des encadrants, à
+                      travers <strong>quatre rôles</strong> aux permissions distinctes (étudiant, entreprise,
+                      responsable pédagogique, admin).
+                    </p>
+                    <p>
+                      Point d'architecture notable : la table <code>Entreprise</code> est séparée du rôle
+                      applicatif — une entreprise est une entité métier à part entière, liée en 1-à-1 au compte
+                      utilisateur, ce qui permet une isolation stricte : une entreprise ne voit que les candidatures
+                      de <em>ses</em> offres. Authentification <strong>JWT</strong> (access + refresh),
+                      <strong>PostgreSQL</strong> via SQLAlchemy asynchrone, migrations <strong>Alembic</strong>
+                      automatiques au démarrage, architecture en couches stricte (routes → repositories), tests sur
+                      SQLite en mémoire, qualité vérifiée par <code>ruff</code> et <code>mypy</code>.
+                    </p>
+                    <div class="dossier__stack">
+                      <span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy async</span><span>Alembic</span>
+                      <span>JWT</span><span>Docker Compose</span><span>Pytest</span><span>Ruff / Mypy</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/fastapi_projet" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 08 -->
+                <article class="dossier reveal">
+                  <div class="dossier__head">
+                    <span class="dossier__num">N.08</span>
+                    <h3 class="dossier__title">Clustering des foyers londoniens</h3>
+                    <span class="dossier__cat">Machine learning non supervisé</span>
+                  </div>
+                  <p class="dossier__tagline">London Smart Meters — deux approches comparées et validées</p>
+                  <div class="dossier__body">
+                    <p>
+                      Ce projet exploite les données de compteurs intelligents de Londres
+                      (<a href="https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london" target="_blank" rel="noreferrer">London Smart Meters, Kaggle</a>)
+                      pour répondre à une question business : peut-on regrouper les foyers en profils de
+                      consommation types ? <strong>Approche B (features)</strong> résume chaque foyer par ses 48
+                      valeurs moyennes demi-horaires normalisées (K-means, CAH, GMM, DBSCAN).
+                      <strong>Approche A (DTW)</strong> travaille sur la forme temporelle brute des courbes de
+                      charge (K-means DTW, CAH, K-Shape).
+                    </p>
+                    <details class="fold">
+                      <summary>Voir la démarche de validation et les conclusions métier</summary>
+                      <div class="fold__content">
+                        <p>
+                          La robustesse est vérifiée par l'<strong>Adjusted Rand Index</strong> entre méthodes et par
+                          une analyse de <strong>stabilité temporelle</strong>. Le dashboard Streamlit multi-pages
+                          reproduit toute la démarche (EDA, Approche A, Approche B, synthèse comparative croisant les
+                          deux approches avec le profil socio-économique ACORN et le type de tarif).
+                        </p>
+                        <p>
+                          Conclusion métier : les clusters cohérents entre les deux approches sont ceux sur lesquels
+                          un fournisseur d'électricité peut construire des offres différenciées avec confiance ; les
+                          profils instables appellent à la prudence.
+                        </p>
+                      </div>
+                    </details>
+                    <div class="dossier__stack">
+                      <span>Scikit-learn</span><span>DTW / K-Shape</span><span>K-means · CAH · GMM · DBSCAN</span>
+                      <span>Streamlit multi-pages</span><span>Pandas / NumPy</span>
+                    </div>
+                    <div class="dossier__links">
+                      <a class="textlink" href="https://github.com/khalilout/Projet_ML_Unsupervised" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="github"></span> Code source (GitHub)
+                      </a>
+                      <a class="textlink" href="https://projetmlunsupervised.streamlit.app/" target="_blank" rel="noreferrer">
+                        <span class="icon" aria-hidden="true" data-icon="play"></span> Démo clustering
+                      </a>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="proj-card__links">
-                <a class="btn btn--ghost" href="https://github.com/khalilout/Projet_ML_Unsupervised" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="github"></span>
-                  <span>Code source (GitHub)</span>
-                </a>
-                <a class="btn btn--primary" href="https://projetmlunsupervised.streamlit.app/" target="_blank" rel="noreferrer">
-                  <span class="icon" aria-hidden="true" data-icon="play"></span>
-                  <span>Démo clustering (Streamlit)</span>
-                </a>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="formation" class="section">
         <div class="container">
-          <div class="section__head">
-            <h2 class="section__title reveal">Formation</h2>
-            <p class="section__subtitle reveal">Parcours académique &amp; certifications.</p>
-          </div>
-
-          <div class="grid grid--2">
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Études</h3>
-              <div class="edu">
-                <div class="edu__row">
-                  <p class="edu__k">Master 1 — Data Science &amp; IA</p>
-                  <p class="edu__v">2025–2026 • ISI • Dakar</p>
-                </div>
-                <div class="edu__row">
-                  <p class="edu__k">Licence — Développement Informatique</p>
-                  <p class="edu__v">10/2022–07/2025 • ISCAE • Nouakchott</p>
-                </div>
-                <div class="edu__row">
-                  <p class="edu__k">Baccalauréat</p>
-                  <p class="edu__v">2021–2022 • Béeli School • Nouakchott</p>
-                </div>
-                <div class="edu__row">
-                  <p class="edu__k">Brevet</p>
-                  <p class="edu__v">2018–2019 • Béeli School • Nouakchott</p>
-                </div>
-              </div>
+          <div class="section__grid">
+            <div class="section__rail reveal">
+              <span class="section__num">05</span>
+              <span class="section__label">Formation</span>
             </div>
+            <div class="section__body">
+              <p class="section__intro reveal">Parcours académique &amp; certifications.</p>
 
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Certifications</h3>
-              <div class="edu">
-                <div class="edu__row">
-                  <p class="edu__k">DELF (Langue française) — Niveau B2</p>
-                  <p class="edu__v">2025 • Alliance Française • Nouakchott</p>
+              <div class="edu-grid reveal">
+                <div>
+                  <h3 class="leaf__title">Études</h3>
+                  <div class="edu-item">
+                    <p class="edu-item__k">Master 1 — Data Science &amp; IA</p>
+                    <p class="edu-item__v">2025–2026 · ISI · Dakar</p>
+                  </div>
+                  <div class="edu-item">
+                    <p class="edu-item__k">Licence — Développement Informatique</p>
+                    <p class="edu-item__v">10/2022–07/2025 · ISCAE · Nouakchott</p>
+                  </div>
+                  <div class="edu-item">
+                    <p class="edu-item__k">Baccalauréat</p>
+                    <p class="edu-item__v">2021–2022 · Béeli School · Nouakchott</p>
+                  </div>
+                  <div class="edu-item">
+                    <p class="edu-item__k">Brevet</p>
+                    <p class="edu-item__v">2018–2019 · Béeli School · Nouakchott</p>
+                  </div>
                 </div>
-                <div class="edu__row">
-                  <p class="edu__k">AWS Academy Graduate — Cloud Foundations</p>
-                  <p class="edu__v">30/03/2026 • AWS Training and Certification • 20h</p>
-                  <p class="muted small">
-                    Concepts : compute, storage, networking, bases de données • Well‑Architected • sécurité/identité
-                    (IAM) • tarification &amp; coûts • services : EC2, S3, VPC…
-                  </p>
-                  <p class="muted small">
-                    <a class="chip" href="assets/certs/AWS_Academy_Graduate_Cloud_Foundations.pdf" download>
-                      Télécharger le badge (PDF)
-                    </a>
-                    <a class="chip" href="https://www.credly.com/go/c5d0hp0w" target="_blank" rel="noreferrer">
-                      Voir sur Credly
-                    </a>
-                  </p>
+
+                <div>
+                  <h3 class="leaf__title">Certifications</h3>
+                  <div class="edu-item">
+                    <p class="edu-item__k">DELF — Niveau B2</p>
+                    <p class="edu-item__v">2025 · Alliance Française · Nouakchott</p>
+                  </div>
+                  <div class="edu-item">
+                    <p class="edu-item__k">AWS Academy Graduate — Cloud Foundations</p>
+                    <p class="edu-item__v">30/03/2026 · AWS Training and Certification · 20h</p>
+                    <p class="muted small">
+                      Compute, storage, networking, bases de données · Well-Architected · IAM · tarification &amp;
+                      coûts · EC2, S3, VPC…
+                    </p>
+                    <p class="muted small" style="margin-top: 10px; display: flex; gap: 16px; flex-wrap: wrap;">
+                      <a class="textlink" href="assets/certs/AWS_Academy_Graduate_Cloud_Foundations.pdf" download
+                        >Télécharger le badge (PDF)</a
+                      >
+                      <a class="textlink" href="https://www.credly.com/go/c5d0hp0w" target="_blank" rel="noreferrer"
+                        >Voir sur Credly</a
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="hr"></div>
-              <p class="muted small">
-                Ce certificat AWS complète directement le projet de pipeline météo serverless présenté plus haut.
-              </p>
             </div>
           </div>
         </div>
@@ -1000,65 +763,53 @@
 
       <section id="contact" class="section">
         <div class="container">
-          <div class="section__head">
-            <h2 class="section__title reveal">Contact</h2>
-            <p class="section__subtitle reveal">On discute de ton besoin, et je te propose une solution.</p>
-          </div>
-
-          <div class="grid grid--2">
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Me joindre</h3>
-              <div class="contact-actions">
-                <button class="copy" type="button" data-copy="Khalilouybt@gmail.com">
-                  <span class="icon" aria-hidden="true" data-icon="copy"></span>
-                  <span>Copier l'email</span>
-                </button>
-                <button class="copy" type="button" data-copy="+221773941018">
-                  <span class="icon" aria-hidden="true" data-icon="copy"></span>
-                  <span>Copier le téléphone</span>
-                </button>
-              </div>
-              <p class="muted small" data-copy-status role="status" aria-live="polite"></p>
-              <div class="hr"></div>
-              <div class="contact-list">
-                <a class="contact" href="mailto:Khalilouybt@gmail.com">
-                  <span class="icon" aria-hidden="true" data-icon="mail"></span>
-                  <span class="contact__text">Khalilouybt@gmail.com</span>
-                </a>
-                <a class="contact" href="tel:+221773941018">
-                  <span class="icon" aria-hidden="true" data-icon="phone"></span>
-                  <span class="contact__text">+221 77 394 10 18</span>
-                </a>
-              </div>
+          <div class="section__grid">
+            <div class="section__rail reveal">
+              <span class="section__num">06</span>
+              <span class="section__label">Contact</span>
             </div>
+            <div class="section__body">
+              <p class="section__intro reveal">On discute de ton besoin, et je te propose une solution.</p>
 
-            <div class="card card--glass reveal">
-              <h3 class="card__title">Envoyer un message</h3>
-              <form class="form" data-mailto-form>
-                <label class="field">
-                  <span class="field__label">Votre nom</span>
-                  <input class="field__input" name="name" autocomplete="name" required />
-                </label>
-                <label class="field">
-                  <span class="field__label">Votre email</span>
-                  <input class="field__input" name="email" type="email" autocomplete="email" required />
-                </label>
-                <label class="field">
-                  <span class="field__label">Sujet</span>
-                  <input class="field__input" name="subject" required />
-                </label>
-                <label class="field">
-                  <span class="field__label">Message</span>
-                  <textarea class="field__input field__input--area" name="message" rows="5" required></textarea>
-                </label>
-                <button class="btn btn--primary" type="submit">
-                  <span class="icon" aria-hidden="true" data-icon="send"></span>
-                  Ouvrir l'email
-                </button>
-                <p class="muted small">
-                  Le formulaire ouvre votre client mail (aucun serveur n'est nécessaire).
-                </p>
-              </form>
+              <div class="leaf reveal">
+                <div style="display: flex; gap: 22px; flex-wrap: wrap; margin-bottom: 10px;">
+                  <button class="textlink" type="button" data-copy="Khalilouybt@gmail.com" style="background:none;border:none;border-bottom:1px solid var(--rule);cursor:pointer;font-family:var(--mono);">
+                    <span class="icon" aria-hidden="true" data-icon="copy"></span> Copier l'email
+                  </button>
+                  <button class="textlink" type="button" data-copy="+221773941018" style="background:none;border:none;border-bottom:1px solid var(--rule);cursor:pointer;font-family:var(--mono);">
+                    <span class="icon" aria-hidden="true" data-icon="copy"></span> Copier le téléphone
+                  </button>
+                </div>
+                <p class="muted small" data-copy-status role="status" aria-live="polite"></p>
+              </div>
+
+              <div class="leaf reveal">
+                <h3 class="leaf__title">Envoyer un message</h3>
+                <form class="form-editorial" data-mailto-form>
+                  <div class="f-field">
+                    <label>Votre nom</label>
+                    <input name="name" autocomplete="name" required />
+                  </div>
+                  <div class="f-field">
+                    <label>Votre email</label>
+                    <input name="email" type="email" autocomplete="email" required />
+                  </div>
+                  <div class="f-field">
+                    <label>Sujet</label>
+                    <input name="subject" required />
+                  </div>
+                  <div class="f-field">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" required></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn--accent" type="submit">
+                      <span class="icon" aria-hidden="true" data-icon="send"></span> Ouvrir l'email
+                    </button>
+                  </div>
+                  <p class="muted small">Le formulaire ouvre votre client mail (aucun serveur n'est nécessaire).</p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -1067,8 +818,8 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p class="muted small">© <span data-year></span> Khalilou Yacouba Tandia — Portfolio.</p>
-        <a class="muted small" href="#top">Retour en haut</a>
+        <span>© <span data-year></span> Khalilou Yacouba Tandia — Dossier professionnel.</span>
+        <a href="#top">Retour en haut ↑</a>
       </div>
     </footer>
   </body>

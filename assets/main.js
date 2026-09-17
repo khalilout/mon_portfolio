@@ -15,26 +15,16 @@ function applyTheme(theme) {
 function initTheme() {
   const stored = localStorage.getItem("theme");
   if (stored) applyTheme(stored);
-  else applyTheme("dark");
+  else applyTheme("light");
 
   const btn = qs("[data-theme-toggle]");
   if (!btn) return;
   btn.addEventListener("click", () => {
-    const current = document.documentElement.dataset.theme || "dark";
+    const current = document.documentElement.dataset.theme || "light";
     const next = current === "dark" ? "light" : "dark";
     localStorage.setItem("theme", next);
     applyTheme(next);
   });
-}
-
-function initHeaderElevation() {
-  const header = qs("[data-elevate]");
-  if (!header) return;
-  const onScroll = () => {
-    header.dataset.elevated = window.scrollY > 6 ? "true" : "false";
-  };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
 }
 
 function initMenu() {
@@ -72,7 +62,7 @@ function initMenu() {
   window.addEventListener(
     "resize",
     () => {
-      if (window.innerWidth >= 860 && open) {
+      if (window.innerWidth >= 900 && open) {
         open = false;
         setOpen(open);
       }
@@ -81,6 +71,7 @@ function initMenu() {
   );
 }
 
+/* Reveal on scroll, with a light stagger for siblings that enter together */
 function initReveal() {
   const els = qsa(".reveal");
   if (!els.length) return;
@@ -92,32 +83,133 @@ function initReveal() {
 
   const io = new IntersectionObserver(
     (entries) => {
-      for (const e of entries) {
+      entries.forEach((e, i) => {
         if (e.isIntersecting) {
-          e.target.classList.add("reveal--visible");
+          const delay = Number(e.target.getAttribute("data-delay") || 0);
+          window.setTimeout(() => e.target.classList.add("reveal--visible"), delay);
           io.unobserve(e.target);
         }
-      }
+      });
     },
-    { threshold: 0.12 },
+    { threshold: 0.1, rootMargin: "0px 0px -8% 0px" },
   );
 
+  els.forEach((el) => io.observe(el));
+}
+
+/* Auto-stagger: give incremental delays to consecutive .reveal children of the same parent */
+function initStagger() {
+  qsa("[data-stagger]").forEach((parent) => {
+    const step = Number(parent.getAttribute("data-stagger")) || 70;
+    qsa(":scope > .reveal", parent).forEach((child, i) => {
+      child.setAttribute("data-delay", String(i * step));
+    });
+  });
+}
+
+/* Top scroll-progress bar */
+function initProgressBar() {
+  const bar = qs("[data-progress]");
+  if (!bar) return;
+  const update = () => {
+    const h = document.documentElement;
+    const scrolled = h.scrollTop;
+    const max = h.scrollHeight - h.clientHeight;
+    const pct = max > 0 ? (scrolled / max) * 100 : 0;
+    bar.style.width = pct + "%";
+  };
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update, { passive: true });
+}
+
+/* Active nav link tracking via section scroll position */
+function initScrollSpy() {
+  const links = qsa(".nav__link[href^='#']");
+  const mobileLinks = qsa(".mobile__link[href^='#']");
+  if (!links.length) return;
+  const sections = links
+    .map((l) => qs(l.getAttribute("href")))
+    .filter(Boolean);
+
+  if (!("IntersectionObserver" in window) || !sections.length) return;
+
+  const setActive = (id) => {
+    [...links, ...mobileLinks].forEach((l) => {
+      l.classList.toggle("is-active", l.getAttribute("href") === `#${id}`);
+    });
+  };
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    },
+    { rootMargin: "-40% 0px -50% 0px", threshold: 0 },
+  );
+  sections.forEach((s) => io.observe(s));
+}
+
+/* Gentle parallax drift on the portrait figure */
+function initParallax() {
+  const fig = qs("[data-parallax]");
+  if (!fig || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const onScroll = () => {
+    const rect = fig.getBoundingClientRect();
+    const vh = window.innerHeight || 1;
+    const center = rect.top + rect.height / 2 - vh / 2;
+    const shift = Math.max(-16, Math.min(16, center * -0.04));
+    fig.style.transform = `translateY(${shift}px)`;
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+/* Animated count-up for numeric stats marked with data-count */
+function initCounters() {
+  const els = qsa("[data-count]");
+  if (!els.length) return;
+  const animate = (el) => {
+    const target = parseFloat(el.getAttribute("data-count"));
+    const decimals = (el.getAttribute("data-count").split(".")[1] || "").length;
+    const suffix = el.getAttribute("data-suffix") || "";
+    const dur = 900;
+    const start = performance.now();
+    const step = (now) => {
+      const p = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const val = target * eased;
+      el.textContent = val.toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  if (!("IntersectionObserver" in window)) {
+    els.forEach(animate);
+    return;
+  }
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          animate(e.target);
+          io.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.6 },
+  );
   els.forEach((el) => io.observe(el));
 }
 
 function initIcons() {
   const icons = {
     moon: "M21 14.5A8.5 8.5 0 0 1 9.5 3a6.8 6.8 0 1 0 11.5 11.5Z",
-    pin: "M12 21s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z",
-    cap: "M12 3 1 8l11 5 9-4.1V15h2V8L12 3Zm-7 9.2V16c0 2.2 3.1 4 7 4s7-1.8 7-4v-3.8l-7 3.2-7-3.2Z",
-    car: "M3 13l1-4a3 3 0 0 1 3-2h10a3 3 0 0 1 3 2l1 4v6h-2a2 2 0 0 1-2-2H7a2 2 0 0 1-2 2H3v-6Zm4 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm10 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z",
     mail: "M4 6h16v12H4V6Zm8 7L4.8 7.7h14.4L12 13Z",
     phone: "M6 2h4l2 6-2.5 1.5A14 14 0 0 0 14.9 14.5L16.4 12 22 14v4c0 1.1-.9 2-2 2C10.1 20 4 13.9 4 6c0-1.1.9-2 2-2Z",
     linkedin:
       "M4 4.5A2.5 2.5 0 1 1 9 4.5 2.5 2.5 0 0 1 4 4.5ZM4.5 9H8v11H4.5V9Zm5.5 0h3.3v1.5h.1c.5-.9 1.7-1.9 3.6-1.9 3.8 0 4.5 2.5 4.5 5.8V20H18v-4.6c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5V20H10V9Z",
-    flag: "M5 3h12l-1 3 1 3H5v12H3V3h2Z",
-    lang: "M12 4v2h7v2h-2.1a12.7 12.7 0 0 1-2.6 6.1l2.4 2.4-1.4 1.4-2.4-2.4A12.6 12.6 0 0 1 9 19l-.7-1.9c1.7-.4 3.2-1.2 4.5-2.3a10.7 10.7 0 0 1-2.3-3.8H9V9h4V8H6V6h6V4Zm2.7 6a8.7 8.7 0 0 1-1.7 2.8A10.4 10.4 0 0 1 11.6 10h3.1ZM22 20h-2l-1.2-3h-4.6L13 20h-2l4.4-11h2.2L22 20Z",
-    bolt: "M13 2 3 14h7l-1 8 10-12h-7l1-8Z",
     copy: "M9 9h10v12H9V9Zm-4-4h10v2H7v10H5V5Z",
     send: "M2 21 23 12 2 3v7l15 2-15 2v7Z",
     github:
@@ -195,9 +287,13 @@ function initMailtoForm() {
 
 setYear();
 initTheme();
-initHeaderElevation();
 initMenu();
+initStagger();
 initReveal();
+initProgressBar();
+initScrollSpy();
+initParallax();
+initCounters();
 initIcons();
 initCopyButtons();
 initMailtoForm();
